@@ -1,0 +1,14 @@
+{
+  "name": "Tati Pizzas (PHP 8.2 + MySQL)",
+  "dockerComposeFile": "compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/var/www/html",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [80],
+  "portsAttributes": {
+    "80": {
+      "label": "Tati Pizzas web",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
